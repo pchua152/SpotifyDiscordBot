@@ -20,7 +20,7 @@ In order to use this program, you will need:
       - pip install spotipy discord.py
 
 # Installation
-In the Spotify Developer Dashboard, create a web app to use the API. The app will create a client_id and client_secret. Replace the variables with these names in spotifyapi.py file with the corresponding values. This allows the API to function using your account. Also, to have the bot return a message, replace channel_id in the spotify_bot.py with the desired channel ID which can be found by right clicking a channel -> copy channel ID.
+In the Spotify Developer Dashboard, create a web app to use the API. The app will create a client_id and client_secret. Replace the variables with these names in spotifyapi.py file with the corresponding values. This allows the API to function using your account. Also, to have the bot return a message when it becomes online, replace channel_id in the spotify_bot.py with the desired channel ID which can be found by right clicking a channel -> copy channel ID. If not, this field is optional so you can remove channel_id references.
 
 python spotify_bot.py runs runs the bot and all commands as well as descriptions are available by starting a message with /
  
