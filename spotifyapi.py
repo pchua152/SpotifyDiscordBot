@@ -12,7 +12,6 @@ client_id = os.getenv("client_id")
 client_secret = os.getenv("client_secret")
 redirect_uri = "http://localhost:3000"
 
-#For multiple scopes just add them together one word
 spotify = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id, client_secret= client_secret, 
                                                                               redirect_uri= redirect_uri, scope = "user-read-currently-playing user-modify-playback-state user-read-playback-state"))
 
@@ -57,7 +56,6 @@ def control(stop):
         return "Must be true or false"
 
 def view_queue():
-    #I hate spelling this word
     q = spotify.queue()
     song_display = ""
     
