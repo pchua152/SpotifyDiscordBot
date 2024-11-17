@@ -33,7 +33,7 @@ async def current_command(phrase: discord.Interaction):
 async def skip_command(phrase:discord.Interaction):
     await phrase.response.send_message(skip_song())
     
-@tree.command(name = "previous", description = "Skips current song")
+@tree.command(name = "previous", description = "Goes to previous song")
 async def skip_command(phrase:discord.Interaction):
     await phrase.response.send_message(prev_song())
 
